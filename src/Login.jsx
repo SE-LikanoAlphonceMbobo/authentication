@@ -47,7 +47,7 @@ const Login = () => {
       <div style={styles.cardTop}><h2 style={styles.h2}>Blockchain Voting</h2></div>
       <div style={styles.cardBelow}>
         <div style={styles.card1}>
-        <h1 style={styles.h1}>Blockchain Voting</h1>
+        <h1 style={styles.h1}> Welcome To Blockchain Voting</h1>
         </div> 
         <div style={styles.card2}>                  
           <h2 style={styles.title}>Sign in</h2>
