@@ -75,7 +75,7 @@ const Login = () => {
         </div>
       </div>
       <footer style={styles.cardTop}>
-        <p style={styles.p1}>Copyright © 2024</p>
+        <p style={styles.p1}>Copyright © 2025</p>
       </footer>
     </div>
   )
