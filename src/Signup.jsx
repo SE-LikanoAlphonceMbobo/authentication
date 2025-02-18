@@ -10,6 +10,8 @@ const Signup = () => {
         name: '',
         email: '',
         password: '',
+        national_id: '',
+        election_name: ''
     });
 
     // navigating
@@ -62,6 +64,18 @@ const Signup = () => {
                                 <input type="email" placeholder="Enter Email" name="email"
                                  onChange={handleInput} className="form-control rounded-0"/>
                                 {errors.email && <span className="text-danger">{errors.email}</span>}
+                  </div>
+                  <div style={styles.formGroup}>
+                    <label htmlFor="name"><strong>National ID</strong></label>
+                    <input type="text" placeholder="08202334552" name="national_id"
+                    onChange={handleInput} className="form-control rounded-0"/>
+                    {errors.national_id && <span className="text-danger">{errors.national_id}</span>}
+                  </div>
+                  <div style={styles.formGroup}>
+                    <label htmlFor="name"><strong>Election Name</strong></label>
+                    <input type="text" placeholder="Elections Name" name="election_name"
+                    onChange={handleInput} className="form-control rounded-0"/>
+                    {errors.election_name && <span className="text-danger">{errors.election_name}</span>}
                   </div>
                   <div style={styles.formGroup}>
                   <label htmlFor="password"><strong>Password</strong></label>

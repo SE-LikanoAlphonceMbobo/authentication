@@ -19,10 +19,12 @@ const db = mysql.createConnection({
 
 // API posting data from our registration form
 app.post('/reactsignup', (req, res) => {
-    const sql = "INSERT INTO login (`name`,`email`,`password`) VALUES (?)";
+    const sql = "INSERT INTO login (`name`,`email`,`national_id`,`election_name`,`password`) VALUES (?)";
     const values = [
         req.body.name,
         req.body.email,
+        req.body.national_id,
+        req.body.election_name,
         req.body.password
     ]
     db.query(sql, [values], (err, data) => {
